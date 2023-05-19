@@ -6,7 +6,246 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishabh Portfolio</title>
-    <link rel="stylesheet" href="./assets/rishabhstyle.css">
+    <style>*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+background-color: rgb(24, 24, 24);
+}
+nav{
+    top: 0%;
+    right:0px;
+    position: fixed;
+    
+    height: 80px;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    
+
+}
+label.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 26px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 7px 14px;
+    border-radius: 30px;
+    margin: 20px;
+
+}
+a.action,a:hover{
+    background: #ff9500;
+    transition: 0.5s;
+}
+.heading{
+    position: absolute;
+width: 652px;
+height: 74px;
+left: 69px;
+top: 230px;
+
+font-style: normal;
+font-weight: 500;
+font-size: 64px;
+line-height: 74px;
+
+
+
+color: #ff9500;
+}
+.name{position: absolute;
+    width: 652px;
+    height: 74px;
+    left: 69px;
+    top: 300px;
+    
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    color: rgb(255, 255, 255);
+
+}
+.edit{
+    position: absolute;
+    width: 652px;
+    height: 74px;
+    left: 900px;
+    top: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 200px;
+    color: rgb(255, 255, 255);
+
+}
+.Rectangle{
+    position: relative;
+    width: 2451.24px;
+    height: 1308.44px;
+    left: -1100px;
+    top: 770px;
+    right: 1px;
+    border-radius: 0 500px 100px 60px;
+    
+    background: linear-gradient(91.44deg, rgba(173, 0, 255, 0.4) 29.85%, rgba(43, 0, 63, 0.348) 87.56%);
+    transform: rotate(-32.14deg);
+}
+.picture{
+    position:absolute;
+    width: 600px;
+    height: 600px;
+    left: 800px;
+    top: 130px;
+    
+    
+}
+
+.name{
+    transition: 3s ease-in-out;
+&:hover{
+    transform: scale(1.1);
+
+}
+}
+.picture{
+    filter: drop-shadow(-31px 18px 140px #000000);
+    transition: all 1s ease-in-out;
+    &:hover{
+    transform: translate(-10px, -14px);
+    }
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .all{
+    padding: 60px;
+}
+.redrect{
+    position: absolute;
+width: 752.47px;
+height: 500px;
+top: -200px;
+right: 80px;
+background: radial-gradient(102.46% 176.65% at 81.26% 162.86%, #780000 23.03%, rgba(120, 0, 0, 0) 100%);
+border-radius: 100px;
+transform: rotate(-32.14deg);
+}
+/*.post{
+    position: absolute;
+    width: 652px;
+    height: 74px;
+    left: 69px;
+    top: 350px;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 74px;
+    color: rgb(133, 133, 133);
+}*/
+.aboutme{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 720px;
+    border-radius: 100px 100px 0 0;
+    background: radial-gradient(102.46% 176.65% at 81.26% 162.86%, #ab0000c3 23.03%, rgb(16, 0, 39) 100%);
+
+}
+.abme{
+
+    position: absolute;
+    width: 652px;
+    height: 74px;
+    left: 69px;
+    top: 780px;
+    
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 44px;
+    background: linear-gradient(180deg, #ffffff 0%, rgb(0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.wrapper{
+    display: inline-flex;
+}
+.wrapper{
+    position: absolute;
+    left: 69px;
+    top: 370px;
+    font-style: normal;
+    font-size: 28px;
+    color: rgb(133, 133, 133);
+}
+.wrapper{
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+.static-text{
+    margin-right: 7px;
+}
+.dynamic-text li{
+    position: relative;
+    left: 0px;
+    top: 0;
+    animation: slide 10s steps(5) infinite;
+}
+@keyframes slide
+{
+    100%{
+       top: -200px;
+    }
+}
+
+.dynamic-text li span{
+    position: relative;
+}
+
+.dynamic-text li span::after{
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(24, 24, 24);
+    
+
+}
+.bio{
+    position: absolute; 
+    top: 850px;
+    left: 69px;
+    right: 69px;
+    color: rgb(138, 138, 138);
+    
+}</style>
 </head>
 
 <body>
@@ -53,7 +292,34 @@
         Thank you for taking the time to visit my profile!</div>
     </div>
     
-    <script src="./assets/rishabhjavas.js"></script> 
+    <script>
+window.onscroll = function() {myFunction()};
+
+
+var navbar = document.getElementById("nav");
+
+
+var sticky = navbar.offsetTop;
+
+ 
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+var TxtType = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+</script> 
 </body>
 
 </html>
